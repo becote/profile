@@ -17,18 +17,26 @@ header img
 nav{
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 50vw;
     border: solid 1px;
+    
 }
 nav ul 
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style-type: none;
+   
+    
+    width: 50vw;
     margin: 0;
     padding: 0;
 
+}
+.navigation_choices
+{
+    display: flex;
 }
 #top_page
 {
@@ -75,6 +83,28 @@ body
     font-family: 'Raleway', sans-serif;
     font-size: 150%;
 }
+footer
+{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Switch*/
 .switch
 {
     position: relative;
@@ -121,9 +151,9 @@ body
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
   }
 .slider.round 
 {
@@ -133,3 +163,4 @@ body
 {
     border-radius: 50%;
 }
+
