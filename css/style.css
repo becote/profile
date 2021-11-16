@@ -1,18 +1,31 @@
 header img
 {
-    height: 250px;
-    width: 300;
+    height: 100px;
+    width: 100px;
 }
 #flex_box_top
 {
     display: flex;
-    height: 20%;
+    justify-content: center;
+    height: 10vh;
 }
 nav li
 {
     list-style-type: none;
     display: inline;
+    justify-content: center;
+}
+#top_page
+{
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+#top_page h1
+{
+    align-content: center;
 }
 
 
