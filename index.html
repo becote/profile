@@ -12,16 +12,25 @@
 <body>
     <div id="flex_box_top">
         <header>
-            <img src="images/Benjamin Cote-logos_transparent.png" alt="name logo">
+            <img src="images/Benjamin Cote-logos_black.png" alt="name logo">
         </header>
         <nav>
             <ul>
-                <a href="#skills_page"><li>Skills</li></a>
-                <a href="#projects_page"><li>Projects</li></a>
-                <a href="resume.html"><li>Resume</li></a>
-                <a href="#contact_page"><li>Contact</li></a>
+                <li><a href="#skills_page">Skills</a></li>
+                <li><a href="#projects_page">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#contact_page">Contact</a></li>
             </ul>
         </nav>
+        <div id="lang_switch">
+            <label for="lang">ENG</label>
+            <label class="switch">
+                <input type="checkbox" name="lang" id="lang">
+                <span class="slider round"></span>
+            </label>
+            <label for="lang">FR</label>
+
+        </div>
     </div>
     <main>
         <div id = "top_page">
@@ -36,15 +45,19 @@
             <h2>
                 Projects
             </h2>
-            <p>sadly theres nothing to show yet...</p>
+            <div id=flex_box_projects>
+                <p>sadly theres nothing to show yet...</p>
+            </div>
         </div>
         <div id="skills_page">
             <h2>Skills</h2>
-            <img src="images/html_logo.png" alt="html logo">
-            <img src="images/css_logo.png" alt="css logo">
-            <img src="images/javascript_logo.png" alt="javascript logo">
-            <img src="images/csharp_logo.png" alt=" c-sharp logo">
-            <img src="images/linux_logo.png" alt="linux logo">
+            <div id="flex_box_skills">
+                <img src="images/html_logo.png" alt="html logo">
+                <img src="images/css_logo.png" alt="css logo">
+                <img src="images/javascript_logo.png" alt="javascript logo">
+                <img src="images/csharp_logo.png" alt=" c-sharp logo">
+                <img src="images/linux_logo.png" alt="linux logo">
+            </div>
         </div>
         <div id="contact_page">
             <h2>Contact informations</h2>

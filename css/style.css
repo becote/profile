@@ -1,7 +1,7 @@
-header img
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+h2
 {
-    height: 100px;
-    width: 100px;
+    text-align: center;
 }
 #flex_box_top
 {
@@ -9,11 +9,26 @@ header img
     justify-content: center;
     height: 10vh;
 }
-nav li
+header img
 {
+    width: 100%;
+    height: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    border: solid 1px;
+}
+nav ul 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
-    display: inline;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+
 }
 #top_page
 {
@@ -22,22 +37,99 @@ nav li
     align-items: center;
     justify-content: center;
     height: 90vh;
+    background-image: linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.50)), url("../images/background.png");
+
 }
-#top_page h1
+#flex_box_projects
 {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
-
-
-
-
-
-
-
-
-
+#flex_box_skills
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+#skills_page img
+{
+    flex-wrap: nowrap;
+}
+#contact_page
+{
+    display: grid;
+    justify-content: center;
+    height: 30vh;
+}
 #skills_page img
 {
     height: 116px;
     width: 100;
+}
+body
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 150%;
+}
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+}
+.switch input
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+.slider.round 
+{
+    border-radius: 34px;
+}
+.slider.round::before
+{
+    border-radius: 50%;
 }
