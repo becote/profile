@@ -5,22 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="javascript/javascript.js"></script>
     <title>Portfolio BETA</title>
 </head>
 <body>
-    <div id="flex_box_top">
-        <header>
-            <img src="images/Benjamin Cote-logos_black.png" alt="name logo">
-        </header>
-        <nav>
-            <div class="navigation_choices">
-                <ul>
-                    <li><a href="#skills_page">Skills</a></li>
-                    <li><a href="#projects_page">Projects</a></li>
-                    <li><a href="void.html">Resume</a></li>
-                    <li><a href="#contact_page">Contact</a></li>
+    <div id="flex_box_top" class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" class="navbar-brand">
+                <img src="images/Benjamin Cote-logos_black.png" alt="name logo" width="60" height="48">
+                Benjamin Cote</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li><a class="nav-link" href="#skills_page">Skills</a></li>
+                    <li><a class="nav-link"href="#projects_page">Projects</a></li>
+                    <li><a class="nav-link"href="#">Resume</a></li>
+                    <li><a class="nav-link"href="#contact_page">Contact</a></li>
                 </ul>
             </div>
         </nav>
