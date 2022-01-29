@@ -24,7 +24,7 @@ img.col
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.50)), url("../images/background.png");
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../images/background.png");
 }
 #flex_box_projects
 {
@@ -54,5 +54,6 @@ img.col
 body
 {
     font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
     font-size: 150%;
 }
