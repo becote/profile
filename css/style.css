@@ -45,8 +45,8 @@ nav ul
     justify-content: center;
     height: 90vh;
     width: 100vw;
-    background-image: linear-gradient(rgba(255,255,255,0.50), rgba(255,255,255,0.50)), url("../images/background.png");
 
+    
 }
 #flex_box_projects
 {
