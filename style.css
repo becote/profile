@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap');
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 1000px){
   body{
-      font-family: 'Titillium Web', sans-serif;
+      
       color: black;
-      min-height: 100vh;
       padding: 2rem;
       display: flex;
+      min-height: 100vh;
       justify-content: center;
       align-items: center;
       background-image: url("./img/bg.jpg");
       background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       animation-name: backgroundZoomAnimate;
       animation-duration: 4s;
       animation-iteration-count: infinite;
@@ -26,6 +26,76 @@
     box-shadow: 0 18px 200px -60px black;
     border-radius: 50px;
     width: 650px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 2px solid #ffffff40;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+  }
+  .facebook{
+    display: flex; 
+    background-color: #1877F2;
+    padding: 10px;
+    border-radius: 40%;
+    
+  }
+  .linkedin{
+    display: flex; 
+    background-color: #0A66C2;
+    padding: 10px;
+    border-radius: 40%;
+    
+  }
+  
+  .gitlab{
+    display: flex; 
+    background-color: #FC6D26;
+    padding: 10px;
+    border-radius: 40%;
+  }
+ 
+  .github{
+    display: flex; 
+    background-color: #050628;
+    padding: 10px;
+    border-radius: 40%;
+  }
+  
+  
+}
+@media only screen and (max-width: 1000px){
+    body{
+     
+      color: black;
+      min-height: 100vh;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("./img/bg-vertical.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation-name: backgroundZoomAnimate;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+  }
+  @keyframes backgroundZoomAnimate {
+    0% {background-size: 100%;}
+    50% {background-size: 130%;}
+    100% {background-size: 100%;}
+
+  }
+  .card{
+    box-shadow: 0 18px 180px -40px black;
+    border-radius: 50px;
+    width: 450px;
     position: relative;
     backdrop-filter: blur(15px);
     border: 2px solid #ffffff40;
@@ -63,7 +133,9 @@
     padding: 10px;
     border-radius: 40%;
   }
-  
+
+
+
 }
 .avatar{
   display: flex;
@@ -92,10 +164,28 @@ a{
   color: azure;
 }
 
+.facebook:hover{
+  transform: scale(1.4);
+}
+.linkedin:hover{
+  transform: scale(1.4);
+}
+.gitlab:hover{
+  transform: scale(1.4);
+}.github:hover{
+  transform: scale(1.4);
+}
+.link_to_email{
+  text-decoration: azure;
+  text-decoration: underline;
+}
+.link_to_email:hover{
+  transform: scale(1.2);
+}
+
 @media only screen and (max-width: 600px){
   body{
     width: auto;
-    font-family: 'Titillium Web', sans-serif;
     color: black;
     min-height: 100vh;
     display: flex;
@@ -104,7 +194,7 @@ a{
     background-image: url(./img/small_screen.png);
     background-position: center;
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       animation-name: backgroundZoomAnimate;
       animation-duration: 4s;
       animation-iteration-count: infinite;
@@ -130,8 +220,7 @@ a{
   .socials{
     display: flex;
     justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0px 50px 0px;
     width: 100%;
   }
 
@@ -163,5 +252,9 @@ a{
     text-decoration: none;
     color: azure;
   }
+}
+body{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 150%;
 }
   
