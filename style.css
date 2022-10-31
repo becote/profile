@@ -16,12 +16,6 @@
       animation-duration: 4s;
       animation-iteration-count: infinite;
   }
-  @keyframes backgroundZoomAnimate {
-    0% {background-size: 100%;}
-    50% {background-size: 130%;}
-    100% {background-size: 100%;}
-
-  }
   .card{
     box-shadow: 0 18px 200px -60px black;
     border-radius: 50px;
@@ -85,12 +79,6 @@
       animation-name: backgroundZoomAnimate;
       animation-duration: 4s;
       animation-iteration-count: infinite;
-  }
-  @keyframes backgroundZoomAnimate {
-    0% {background-size: 100%;}
-    50% {background-size: 130%;}
-    100% {background-size: 100%;}
-
   }
   .card{
     box-shadow: 0 18px 180px -40px black;
@@ -166,14 +154,26 @@ a{
 
 .facebook:hover{
   transform: scale(1.4);
+  border-style: solid;
+  border-width: 1px;
+  border-color: azure;
 }
 .linkedin:hover{
   transform: scale(1.4);
+  border-style: solid;
+  border-width: 1px;
+  border-color: azure;
 }
 .gitlab:hover{
   transform: scale(1.4);
+  border-style: solid;
+  border-width: 1px;
+  border-color: azure;
 }.github:hover{
   transform: scale(1.4);
+  border-style: solid;
+  border-width: 1px;
+  border-color: azure;
 }
 .link_to_email{
   text-decoration: azure;
@@ -182,6 +182,12 @@ a{
 .link_to_email:hover{
   transform: scale(1.2);
 }
+@keyframes backgroundZoomAnimate {
+    0% {background-size: 125%;}
+    50% {background-size: 150%;}
+    100% {background-size: 125%;}
+
+  }
 
 @media only screen and (max-width: 600px){
   body{
@@ -194,16 +200,10 @@ a{
     background-image: url(./img/small_screen.png);
     background-position: center;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       animation-name: backgroundZoomAnimate;
       animation-duration: 4s;
       animation-iteration-count: infinite;
-  }
-  @keyframes backgroundZoomAnimate {
-    0% {background-size: 100%;}
-    50% {background-size: 130%;}
-    100% {background-size: 100%;}
-
   }
   .card{
     box-shadow: 0 18px 150px -45px black;
@@ -257,4 +257,3 @@ body{
   font-family: 'Titillium Web', sans-serif;
   font-size: 150%;
 }
-  
